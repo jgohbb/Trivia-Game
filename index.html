@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Totally Trivial Trivia!</title>
+    <meta name="example timer" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
@@ -13,22 +15,18 @@
 <body>
     
     <div class="container">
-        <h1 class="header">Totally Trivial Foodie Trivia!</h1>
-        <div class="start-pg">
-            <h2 class="time-remain">Time Remaining:<br><span id="timer"></span></h2>
-            <section class="questions">
-                <form class="form" action=" ">
-                    <h3 class="question"></h3>
-                    <label for="answer1"><input type="radio" name="sub" id="answer-one"/></label> <br>
-                    <label for="answer2"><input type="radio" name="sub" id="answer-two"/></label><br>
-                    <label for="answer3"><input type="radio" name="sub" id="answer-three" /></label> <br>
-                    <label for="answer4"><input type="radio" name="sub" id="answer-four" /></label>
-                    <p class="start-button text-center animated zoomInDown">
-                        <a class="btn btn-primary btn-lg startButton animated pulse infinite" href="#" role="button">
-                          <span class="glyphicon glyphicon-off"></span>
-                        </a>    
-                    </form>
-            </section>
+        <h1 id="header">Totally Trivial Foodie Trivia!</h1>
+        <div class="wrapper">
+            <h2 id="time-remain">Time Remaining:<br><span id="timer"></span></h2>
+            <div class="Q&A">
+                <h3 id="question"></h3>
+                <p id="answers"></p>
+            </div>
+        </div>
+
+        <div class="start">
+            <h4>Welcome! Press to....</h4>
+            <a href="#" role="button"><img src="assets/images/startbutton.jpg" width="250"></a>
         </div>
     </div>
 

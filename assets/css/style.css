@@ -1,20 +1,32 @@
 body {
     background-image: url(../images/background.jpg);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
 }
 
 .container {
+    width: 900px;
+    max-width: 90%;
     background: rgb(156, 234, 236);
     text-align: center;
     opacity: 0.9;
     border: 2px solid darkolivegreen;
     margin-top: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px 2px;
 }
 
-.header {
-    margin: 30px 0 0 0;
-    padding: 20px 0 0 0;
+h1 {
+    margin: 20px 0 0 0;
+    padding: 20px 0 20px 0;
 }
 
-li {
-    margin: 30px;
+a {
+    margin: 0;
+    padding: 0;
 }
